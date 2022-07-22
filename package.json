@@ -1,14 +1,21 @@
 {
   "name": "practica_2022",
   "version": "1.0.0",
-  "description": "",
+  "description": "JS session 1",
   "main": "index.js",
-  "port": 3001,
   "scripts": {
     "start": "react-scripts start"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/speedy4all/Practica_2022.git"
+  },
+  "author": "Bogdan B",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/speedy4all/Practica_2022/issues"
+  },
+  "homepage": "https://github.com/speedy4all/Practica_2022#readme",
   "dependencies": {
     "react-scripts": "^5.0.1"
   },
