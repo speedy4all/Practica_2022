@@ -1,0 +1,7 @@
+body {
+    display: flex;
+}
+
+table {
+    flex: 1;
+}
