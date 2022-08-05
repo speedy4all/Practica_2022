@@ -1,0 +1,13 @@
+.sidebar {
+    width: 10%;
+    background-color: lightgray;
+    bottom: 50px;
+    left: 0;
+    position: absolute;
+    top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+}
