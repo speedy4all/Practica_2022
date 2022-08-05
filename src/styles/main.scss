@@ -1,0 +1,14 @@
+@import '../components/Header/style.scss';
+@import '../components/Footer/style.scss';
+@import '../components/Sidebar/style.scss';
+@import '../components/Content/style.scss';
+
+
+body {
+    height: 100vh;
+    margin: 0;
+
+    #root {
+        height: 100%;
+    }
+}

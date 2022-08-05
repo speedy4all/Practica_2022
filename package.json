@@ -1,16 +1,19 @@
 {
   "name": "practica_2022",
   "version": "1.0.0",
-  "description": "",
+  "description": "JS session 1",
   "main": "index.js",
-  "port": 3001,
   "scripts": {
     "start": "react-scripts start"
   },
-  "author": "",
+  "author": "Bogdan B",
   "license": "ISC",
   "dependencies": {
-    "react-scripts": "^5.0.1"
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.54.3"
   },
   "browserslist": {
     "production": [
@@ -19,9 +22,8 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      ">0.2%",
+      "not dead"
     ]
   }
 }
