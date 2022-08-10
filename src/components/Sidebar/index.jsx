@@ -1,9 +1,16 @@
-import React from 'react';
+import React from "react";
+import { Layout, Menu } from "antd";
+import menu from "../../menu";
 
-export default function Sidebar({ children }) {
+export default function Sidebar({ onMenuClick }) {
   return (
-    <section className='sidebar'>
-        {children}
-    </section>
+    <Layout.Sider className="app-sidebar">
+      <Menu
+        defaultSelectedKeys={['/dashboard']}
+        theme="dark"
+        items={menu}
+        onClick={onMenuClick}
+      />
+    </Layout.Sider>
   );
 }

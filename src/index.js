@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import './styles/main.scss';
+import 'antd/dist/antd.min.css';
 import App from './containers/App';
 
 const container = document.getElementById('root');
