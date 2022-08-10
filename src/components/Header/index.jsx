@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import { Layout, Typography } from "antd";
 
-export default function Header({ children }) {
+export default function Header() {
   return (
-    <header className='app-header'>
-          {children}  
-    </header>
+    <Layout.Header className="app-header">
+      <Typography.Text style={{ color: "white" }}>
+        Practica ReactJS Pentalog 2022
+      </Typography.Text>
+    </Layout.Header>
   );
 }

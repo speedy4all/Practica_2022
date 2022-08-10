@@ -3,6 +3,7 @@
 @import '../components/Sidebar/style.scss';
 @import '../components/Content/style.scss';
 
+$text-color: red;
 
 body {
     height: 100vh;
@@ -12,3 +13,14 @@ body {
         height: 100%;
     }
 }
+
+.ant-layout {
+    &.app-layout {
+        height: 100%;
+        color: $text-color;
+    }
+}
+
+
+
+
