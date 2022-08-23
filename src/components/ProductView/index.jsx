@@ -1,13 +1,16 @@
 import { Button, Form, Input } from 'antd';
 import React from 'react';
 
-export default function ProductView({ product, onCancel }) {
+export default function ProductView({ product, onCancel, onSave }) {
   return (
     <Form
         labelCol={{ span: 4 }}
         wrapperCol={{ span: 14 }}
         layout="horizontal"
         initialValues={product}
+        onFinish={(values) => {
+          onSave?.(values);
+        }}
       >
         <Form.Item label="Name" name="name">
           <Input />
@@ -19,7 +22,7 @@ export default function ProductView({ product, onCancel }) {
           <Input />
         </Form.Item>
         <Form.Item>
-          <Button>Save</Button>
+          <Button htmlType='submit'>Save</Button>
         </Form.Item>
         <Form.Item>
           <Button type='ghost' onClick={onCancel}>Cancel</Button>

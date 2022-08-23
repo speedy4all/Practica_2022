@@ -17,8 +17,8 @@ export default function ClientsView({ dataSource }) {
       key="tags"
       render={(tags) => (
         <>
-          {tags.map((tag) => (
-            <Tag color="blue" key={tag}>
+          {tags?.map((tag, index) => (
+            <Tag color="blue" key={`${tag}_${index}`}>
               {tag}
             </Tag>
           ))}

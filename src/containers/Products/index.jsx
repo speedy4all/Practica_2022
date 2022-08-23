@@ -1,21 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Table } from "antd";
-import { columns, data } from "./columns";
-import { useAppContext } from "../App/context";
+import { columns } from "./columns";
+import { useNavigate } from "react-router-dom";
+import { fetchUsersApi } from "../../api";
 
 export default function Products() {
-  const { setPath } = useAppContext();
+  const [users, setUsers] = useState([]);
 
+  useEffect(() => {
+    fetchUsersApi()
+      .then((resp) => {
+        setUsers(resp);
+      })
+      .catch((e) => {
+        setUsers([]);
+        console.log(JSON.stringify(e));
+      });
+  }, []);
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     fetchUsersApi().then((resp) => {
+  //       setUsers(resp);
+  //     });
+  //   }, 2000);
+
+  //   return () => clearInterval(interval);
+  // }, []);
+
+  const navigate = useNavigate();
   const onRowClick = (row) => {
-    const path = `/product/${row.key}`;
-    console.log(path);
-    setPath(path);
+    const path = `/products/${row.id}`;
+    navigate(path);
   };
 
   return (
     <Table
       columns={columns}
-      dataSource={data}
+      dataSource={users}
       onRow={(record) => ({
         onDoubleClick: () => onRowClick(record),
       })}
