@@ -1,16 +1,15 @@
 import React, { useContext } from "react";
 import { Layout, Menu } from "antd";
 import menu from "../../menu";
-import { useAppContext } from "../../containers/App/context";
+import { useNavigate } from "react-router-dom";
 
 export default function Sidebar() {
 
-  const { setPath } = useAppContext();
-
+  const navigate = useNavigate();
   const onMenuClick = ({ item }) => {
     const _path = item.props?.path;
     console.log(_path);
-    setPath(_path);
+    navigate(_path);
   };
 
   return (

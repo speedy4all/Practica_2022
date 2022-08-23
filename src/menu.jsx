@@ -7,7 +7,7 @@ import {
 export default [
   {
     label: "Dashboard",
-    path: "/dashboard",
+    path: "/",
     key: "/dashboard",
     icon: <DashboardOutlined />,
   },
