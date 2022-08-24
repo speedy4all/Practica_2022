@@ -1,4 +1,4 @@
-# Practica_2022 ![build workflow](https://github.com/speedy4all/Practica_2022/actions/workflows/node.js.yml/badge.svg)
+# ReactJS sample project ![build workflow](https://github.com/speedy4all/Practica_2022/actions/workflows/node.js.yml/badge.svg)
 - Example project to be used as guide for students
 
 ## Install
