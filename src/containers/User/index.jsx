@@ -1,18 +1,19 @@
 import React, { useCallback, useEffect, useReducer, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { fetchUserApi, saveUserApi } from "../../api";
 import ProductView from "../../components/ProductView";
 import {
-  initialState,
-  reducer,
   SHOW_LOADER,
   UPDATE_USER,
   USER_SAVED,
   USER_SAVED_FAILED,
 } from "./reducer";
 
-export default function Product() {
-  const [state, dispatch] = useReducer(reducer, initialState);
+export default function User() {
+
+  const state = useSelector((store) => store.user);
+  const dispatch = useDispatch();
 
   const { user, isLoading, error } = state;
 

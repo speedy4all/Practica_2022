@@ -16,13 +16,7 @@ const fetchUsersApi = async () => {
 
 const fetchClientsApi = async () => {
   const resp = await axios.get(`${API_URL}/clients`);
-
-  const clients = resp.data.map((client) => {
-    const names = client.name.split(" ");
-    return { ...client, firstName: names[0], lastName: names[1] };
-  });
-
-  return clients;
+  return resp.data;
 };
 
 const fetchUserApi = async (id) => {
