@@ -10,7 +10,7 @@ export const initialState = {
   error: "",
 };
 
-export const reducer = (state, action) => {
+export const reducer = (state = initialState, action) => {
   switch (action.type) {
     case SHOW_LOADER:
       return { ...state, isLoading: true };

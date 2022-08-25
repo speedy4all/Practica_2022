@@ -12,9 +12,9 @@ export default [
     icon: <DashboardOutlined />,
   },
   {
-    label: "Products",
-    path: "/products",
-    key: "/products",
+    label: "Users",
+    path: "/users",
+    key: "/users",
     icon: <DropboxOutlined />,
   },
   {
