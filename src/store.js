@@ -2,7 +2,10 @@ import { configureStore } from "@reduxjs/toolkit";
 import { reducer } from "./containers/User/reducer";
 import usersReducer from "./containers/Users/reducer";
 import clientsReducer from './containers/Clients/reducer';
-import middleware from "./middlewares";
+import sagas from "./middlewares";
+import createSagaMiddleware from 'redux-saga';
+
+const sagaMiddleware = createSagaMiddleware();
 
 export default configureStore({
   reducer: {
@@ -10,5 +13,7 @@ export default configureStore({
     users: usersReducer,
     clients: clientsReducer
   },
-  middleware
+  middleware: [sagaMiddleware],
 });
+
+sagaMiddleware.run(sagas);

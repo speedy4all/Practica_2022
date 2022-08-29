@@ -2,7 +2,7 @@ import axios from "axios";
 
 const API_URL = "http://localhost:3001";
 
-const fetchUsersApi = async () => {
+const fetchUsersApi = async (id) => {
   try {
     const resp = await axios.get(`${API_URL}/users`);
     return resp.data;
