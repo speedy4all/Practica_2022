@@ -9,7 +9,6 @@ export function* fetchUsersMiddleware() {
 
 export function* fetchUsersMiddlewareHandler(action) {
   try {
-    debugger;
     const resp = yield call(fetchUsersApi, 2);
     yield put(fetchUsersSuccess(resp));
   } catch (e) {
@@ -22,22 +21,3 @@ export function* usersSaga() {
 }
 
 export default usersSaga;
-
-// const fetchUsersMiddleware =
-//   ({ dispatch }) =>
-//   (next) =>
-//   (action) => {
-//     next(action);
-
-//     if (action.type === FETCH_USERS_REQUEST) {
-// fetchUsersApi()
-//   .then((resp) => {
-//     dispatch(fetchUsersSuccess(resp));
-//   })
-//   .catch((e) => {
-//     dispatch(fetchUsersFailed(e.message));
-//   });
-//   }
-// };
-
-// export default [fetchUsersMiddleware];

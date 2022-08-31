@@ -4,10 +4,13 @@ import PropTypes from "prop-types";
 export default function Table({ data, descriptor }) {
   return (
     <table>
+      <button>Reset</button>
       <thead>
         <tr>
           <th>#</th>
-          {descriptor.map((col) => <th key={col.label}>{col.label}</th>)}
+          {descriptor.map((col) => (
+            <th key={col.label}>{col.label}</th>
+          ))}
         </tr>
       </thead>
       <tbody>
@@ -15,7 +18,11 @@ export default function Table({ data, descriptor }) {
           return (
             <tr key={`${item.name}_${item.age}_${item.email}`}>
               <td>{index + 1}</td>
-              {descriptor.map((col) => <td key={col.accessor}>{col.render ? col.render(item) : item[col.accessor]}</td>)}
+              {descriptor.map((col) => (
+                <td key={col.accessor}>
+                  {col.render ? col.render(item) : item[col.accessor]}
+                </td>
+              ))}
             </tr>
           );
         })}
