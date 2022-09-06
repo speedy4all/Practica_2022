@@ -5,6 +5,7 @@ const columns = [
       title: 'Name',
       dataIndex: 'name',
       key: 'name',
+      required: true,
       render: (text) => <a>{text}</a>,
     },
     {
