@@ -7,7 +7,7 @@
     "start": "react-scripts start",
     "server": "json-server --watch db.json --port 3001",
     "build": "react-scripts build",
-    "test": "jest --collect-coverage"
+    "test": "jest --"
   },
   "author": "Bogdan B",
   "license": "ISC",
