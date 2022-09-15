@@ -29,7 +29,13 @@ const saveUserApi = async (values, fakeFail) => {
     throw new Error("500 Service unavailable");
   }
 
-  const resp = await axios.post(`${API_URL}/users`, values);
+  let resp;
+  if(values.id) {
+    resp = await axios.put(`${API_URL}/users/${values.id}`, values);
+  } else {
+    resp = await axios.post(`${API_URL}/users`, values);
+  }
+  
   return resp.data;
 };
 

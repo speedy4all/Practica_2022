@@ -1,49 +1,10 @@
 {
   "users": [
     {
-      "id": "6304f98b42ade0e7e65c2aee",
-      "index": 0,
-      "guid": "75c95815-9c6d-4f0d-8d2c-a3308d577179",
-      "isActive": false,
-      "balance": "$2,359.78",
-      "picture": "http://placehold.it/32x32",
-      "age": 29,
-      "eyeColor": "green",
       "name": "Daphne Rivera",
-      "gender": "female",
-      "company": "JIMBIES",
-      "email": "daphnerivera@jimbies.com",
-      "phone": "+1 (826) 587-3300",
+      "age": "10",
       "address": "381 Provost Street, Woodburn, Ohio, 1809",
-      "about": "Minim deserunt ad dolore deserunt exercitation amet reprehenderit in ea ut. Velit incididunt aute in reprehenderit. Pariatur id et ut consectetur qui sint amet excepteur quis labore enim laborum dolor eu. Mollit dolor proident dolore adipisicing reprehenderit ipsum non duis enim aliquip ea do pariatur et.\r\n",
-      "registered": "2016-06-11T07:52:32 -02:00",
-      "latitude": 52.822864,
-      "longitude": -116.896735,
-      "tags": [
-        "ipsum",
-        "tempor",
-        "amet",
-        "pariatur",
-        "sunt",
-        "ad",
-        "id"
-      ],
-      "friends": [
-        {
-          "id": 0,
-          "name": "Sellers Nolan"
-        },
-        {
-          "id": 1,
-          "name": "Charity Mckenzie"
-        },
-        {
-          "id": 2,
-          "name": "Anna Marshall"
-        }
-      ],
-      "greeting": "Hello, Daphne Rivera! You have 1 unread messages.",
-      "favoriteFruit": "strawberry"
+      "id": "6304f98b42ade0e7e65c2aee"
     },
     {
       "id": "6304f98ba6c97d46b2d3bfe9",
@@ -1181,6 +1142,48 @@
       "age": 29,
       "address": "381 Provost Street, Woodburn, Ohio, 1809",
       "id": "YaXtF9w"
+    },
+    {
+      "name": "Britt Francis1",
+      "age": 22,
+      "address": "879 Wyckoff Street, Elizaville, Wyoming, 593",
+      "id": "JjcYg12"
+    },
+    {
+      "name": "Britt Francis1",
+      "age": "12",
+      "address": "879 Wyckoff Street, Elizaville, Wyoming, 593",
+      "id": "TLdPbiu"
+    },
+    {
+      "name": "Britt Francis",
+      "age": "12",
+      "address": "879 Wyckoff Street, Elizaville, Wyoming, 593",
+      "id": "Fhtm7TK"
+    },
+    {
+      "name": "Britt Francis",
+      "age": "12",
+      "address": "879 Wyckoff Street, Elizaville, Wyoming, 593",
+      "id": "zNPn8qs"
+    },
+    {
+      "name": "Daphne Rivera",
+      "age": "34",
+      "address": "381 Provost Street, Woodburn, Ohio, 1809",
+      "id": "m6vcSee"
+    },
+    {
+      "name": "Daphne Rivera",
+      "age": "12",
+      "address": "381 Provost Street, Woodburn, Ohio, 1809",
+      "id": "674YNX-"
+    },
+    {
+      "name": "Daphne Rivera",
+      "age": "12",
+      "address": "381 Provost Street, Woodburn, Ohio, 1809",
+      "id": "t2Ln-oF"
     }
   ],
   "clients": [
