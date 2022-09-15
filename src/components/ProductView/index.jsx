@@ -30,6 +30,7 @@ export default function ProductView({ product, onCancel, onSave }) {
     >
       <Form.Item
         label="Name"
+        htmlFor="name"
         name="name"
         rules={[{ required: true, message: "Name is mandatory" }]}
       >
@@ -38,11 +39,12 @@ export default function ProductView({ product, onCancel, onSave }) {
       <Form.Item
         label="Age"
         name="age"
+        htmlFor="age"
         rules={[{ required: true, message: "Age required" }]}
       >
         <Input type="number" />
       </Form.Item>
-      <Form.Item label="Address" name="address">
+      <Form.Item label="Address" name="address" htmlFor="address">
         <Input />
       </Form.Item>
       <Form.Item>

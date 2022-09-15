@@ -4,10 +4,9 @@ import PropTypes from "prop-types";
 export default function Table({ data, descriptor }) {
   return (
     <table>
-      <button>Reset</button>
       <thead>
-        <tr>
-          <th>#</th>
+        <tr key="header_row">
+          <th key="index_column_header">#</th>
           {descriptor.map((col) => (
             <th key={col.label}>{col.label}</th>
           ))}

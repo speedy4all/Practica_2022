@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Table } from "antd";
 import { columns } from "./columns";
 import { useNavigate, useParams } from "react-router-dom";
@@ -9,10 +9,8 @@ import useInitialFetch from "../../hooks/useInitialFetch";
 const DynamicTable = withDynamicColumnsHOC(Table);
 
 export default function Users() {
-  const { id } = useParams();
 
   const state = useInitialFetch(fetchUsers, {
-    payload: id,
     stateSelector: "users",
   });
 
